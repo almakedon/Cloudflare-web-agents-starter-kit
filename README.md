@@ -14,6 +14,9 @@ A starter template for building AI-powered chat agents using Cloudflare's Agent 
 - 🔄 State management and chat history
 - 🎨 Modern, responsive UI
 
+## Video Tutorials
+ - https://www.youtube.com/watch?v=l4tHKJFQvRg
+
 ## Prerequisites
 
 - Cloudflare account
