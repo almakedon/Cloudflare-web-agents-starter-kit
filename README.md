@@ -2,6 +2,8 @@
 
 ![agents-header](https://github.com/user-attachments/assets/f6d99eeb-1803-4495-9c5e-3cf07a37b402)
 
+<a href="https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/agents-starter"><img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare"/></a>
+
 A starter template for building AI-powered chat agents using Cloudflare's Agent platform, powered by [`agents`](https://www.npmjs.com/package/agents). This project provides a foundation for creating interactive chat experiences with AI, complete with a modern UI and tool integration capabilities.
 
 ## Features
@@ -27,7 +29,7 @@ A starter template for building AI-powered chat agents using Cloudflare's Agent 
 1. Create a new project:
 
 ```bash
-npm create cloudflare@latest -- --template cloudflare/agents-starter
+npx create-cloudflare@latest --template cloudflare/agents-starter
 ```
 
 2. Install dependencies:
@@ -128,7 +130,7 @@ export const executions = {
 Tools can be configured in two ways:
 
 1. With an `execute` function for automatic execution
-2. Without an `execute` function, requiring confirmation and using the `executions` object to handle the confirmed action
+2. Without an `execute` function, requiring confirmation and using the `executions` object to handle the confirmed action. NOTE: The keys in `executions` should match `toolsRequiringConfirmation` in `app.tsx`.
 
 ### Use a different AI model provider
 
